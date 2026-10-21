@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Campus Coding Club - Home</title>
+</head>
+<body>
+
+    <!-- 
+        ========================================================================
+        PART 1: IDENTIFIED ERRORS & CORRECTIONS
+        ========================================================================
+        Error 1  (Line 1):  Missing <!DOCTYPE html> declaration and lang attribute.
+        Error 2  (Line 3):  Missing closing </title> tag.
+        Error 3  (Line 4):  <meta charset="utf-8"> should precede <title> inside <head>.
+        Error 4  (Line 7):  Mismatched heading tag: <h1> closed with </h2> instead of </h1>.
+        Error 5  (Line 8):  Improper tag nesting: <strong><em>Wednesday</strong></em> should be <em></em> nested inside <strong></strong>.
+        Error 6  (Line 8):  Missing closing </p> tag at the end of the paragraph.
+        Error 7  (Line 9):  Heading tag closed incorrectly with <h2> instead of </h2>.
+        Error 8  (Line 10/14): Tag mismatch: <ul> closed with </ol> instead of </ul>.
+        Error 9  (Line 11): Missing closing </li> tag on the first list item.
+        Error 10 (Line 15): Missing quotes and protocol in link: href=www.umt.edu.my should be href="https://www.umt.edu.my".
+        Error 11 (Line 16): <img> tag is missing the required 'alt' attribute.
+        Error 12 (Line 17): Bare special characters: '(c)' should be &copy; and '&' must be &amp;.
+        Error 13 (Line 18): Missing closing </html> tag at the end of the file.
+        ========================================================================
+    -->
+
+    <!-- Navigation Bar -->
+    <nav>
+        <p>
+            <a href="lab1_ExerB.html">Home</a> | 
+            <a href="contact.html">Contact Us</a>
+        </p>
+    </nav>
+    <hr>
+
+    <!-- Main Heading and Introduction -->
+    <header>
+        <h1>Welcome to Campus Coding Club</h1>
+        <p>We meet every <strong><em>Wednesday</em></strong> at Lab 3.</p>
+    </header>
+
+    <!-- Club Image -->
+    <div>
+        <img src="club.jpg" alt="Campus Coding Club members collaborating on a software project" width="550">
+    </div>
+
+    <!-- Advisor Quote Section -->
+    <section>
+        <h2>Words from Our Club Advisor</h2>
+        <blockquote>
+            "Coding is not just about writing lines of syntax; it is about cultivating logic, creativity, and persistent problem-solving."
+            &mdash; Dr. Nor Azman, Club Advisor
+        </blockquote>
+    </section>
+
+    <!-- Activities Section -->
+    <section>
+        <h2>Our Activities</h2>
+        <ul>
+            <li>Weekly coding sessions</li>
+            <li>Hackathon</li>
+            <li>Web design workshop</li>
+        </ul>
+    </section>
+
+    <!-- External Links -->
+    <div>
+        <p>Visit our university: <a href="https://www.umt.edu.my" target="_blank">UMT Website</a></p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <hr>
+        <p>Copyright &copy; 2026 Campus Coding Club &amp; Friends</p>
+    </footer>
+
+</body>
+</html>
