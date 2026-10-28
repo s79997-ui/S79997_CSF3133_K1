@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile Page</title>
+</head>
+<body>
+
+    <!-- Semantic Header -->
+    <header>
+        <h1>Personal Profile Page</h1>
+        <p>Welcome to my introductory web page.</p>
+    </header>
+
+    <!-- Semantic Navigation -->
+    <nav>
+        <a href="#about">About</a> |
+        <a href="#profile-table">Profile Details</a> |
+        <a href="#contact-form">Contact Form</a>
+    </nav>
+
+    <hr>
+
+    <!-- Semantic Section & Article for Content -->
+    <section id="about">
+        <article>
+            <h2>About Me</h2>
+            <p>Hello! This webpage demonstrates the use of semantic HTML5 tags, structured data tables, and interactive input forms.</p>
+        </article>
+    </section>
+
+    <!-- Section 1: Table Implementation -->
+    <section id="profile-table">
+        <h2>Personal Information</h2>
+        <table border="1" cellpadding="8" cellspacing="0">
+            <tr>
+                <th>Attribute</th>
+                <th>Detail</th>
+                <th>Category</th>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>Alex Morgan</td>
+                <td>General</td>
+            </tr>
+            <tr>
+                <td>Age</td>
+                <td>21</td>
+                <td>Demographics</td>
+            </tr>
+            <tr>
+                <td>Occupation</td>
+                <td>Software Engineering Student</td>
+                <td>Professional</td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td>Rawang</td>
+                <td>Location</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Section 2: Form Implementation -->
+    <section id="contact-form">
+        <h2>User Registration Form</h2>
+        <form action="submit_form.php" method="post">
+            
+            <!-- Text Inputs: Name and Email -->
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" required><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <!-- Radio Buttons: Gender -->
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br><br>
+
+            <!-- Checkboxes: Hobbies -->
+            <label>Favorite Hobbies:</label><br>
+            <input type="checkbox" id="hobby_reading" name="hobbies" value="reading">
+            <label for="hobby_reading">Reading</label><br>
+            <input type="checkbox" id="hobby_gaming" name="hobbies" value="gaming">
+            <label for="hobby_gaming">Gaming</label><br>
+            <input type="checkbox" id="hobby_coding" name="hobbies" value="coding">
+            <label for="hobby_coding">Coding</label><br><br>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Submit Information">
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- Semantic Footer -->
+    <footer>
+        <p>&copy; 2026 Personal Profile Lab. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
