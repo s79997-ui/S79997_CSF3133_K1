@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Faculty Programming Workshop 2026</title>
+</head>
+<body>
+
+    <!-- Semantic Header Section -->
+    <header>
+        <h1>UMT Faculty Programming Workshop 2026</h1>
+        <p>Empowering Next-Generation Software Developers</p>
+    </header>
+
+    <!-- Semantic Navigation with Internal Jump Links -->
+    <nav>
+        <a href="#about">About the Event</a> |
+        <a href="#schedule">Event Schedule</a> |
+        <a href="#register">Registration</a>
+    </nav>
+
+    <hr>
+
+    <!-- Section 1: About the Event (Contains 2 Articles) -->
+    <section id="about">
+        <h2>About the Event</h2>
+        
+        <article>
+            <h3>Keynote Speaker: Dr. Sarah Lee</h3>
+            <p>Dr. Sarah Lee will be sharing industry practices on modern web architectures and software design standards.</p>
+        </article>
+
+        <article>
+            <h3>Hands-On Activity: Rapid Web Prototyping</h3>
+            <p>Participants will team up to design, build, and deploy a responsive static site using standard HTML5 structures.</p>
+        </article>
+    </section>
+
+    <hr>
+
+    <!-- Section 2: Event Schedule Table -->
+    <section id="schedule">
+        <h2>Event Schedule</h2>
+        <table>
+            <tr>
+                <th>Time</th>
+                <th>Activity</th>
+                <th>Venue</th>
+                <th>Person in Charge</th>
+            </tr>
+            <tr>
+                <td>08:30 AM - 09:00 AM</td>
+                <td>Participant Registration &amp; Breakfast</td>
+                <td>Main Foyer</td>
+                <td>Mr. Farhan</td>
+            </tr>
+            <tr>
+                <td>09:00 AM - 10:30 AM</td>
+                <td>Keynote Address: Modern Web Standards</td>
+                <td>Auditorium A</td>
+                <td>Dr. Sarah Lee</td>
+            </tr>
+            <!-- rowspan used across two consecutive sessions sharing Lab 3 -->
+            <tr>
+                <td>10:30 AM - 12:00 PM</td>
+                <td>Hands-On Lab: Semantic HTML Structures</td>
+                <td rowspan="2">Computer Lab 3</td>
+                <td>En. Hafiz</td>
+            </tr>
+            <tr>
+                <td>12:00 PM - 01:00 PM</td>
+                <td>Code Review &amp; Debugging Clinic</td>
+                <td>Cik Aisyah</td>
+            </tr>
+            <!-- colspan used across Activity, Venue, and Person in Charge -->
+            <tr>
+                <td>01:00 PM - 02:00 PM</td>
+                <td colspan="3">Lunch Break &amp; Networking Session</td>
+            </tr>
+            <tr>
+                <td>02:00 PM - 04:30 PM</td>
+                <td>Team Mini-Hackathon Challenge</td>
+                <td>Auditorium B</td>
+                <td>Ts. Azman</td>
+            </tr>
+            <tr>
+                <td>04:30 PM - 05:00 PM</td>
+                <td>Award Presentation &amp; Closing Ceremony</td>
+                <td>Auditorium B</td>
+                <td>Committee Chair</td>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+
+    <!-- Section 3: Registration Form -->
+    <section id="register">
+        <h2>Student Registration Form</h2>
+        <form action="register.html" method="post">
+
+            <!-- Text inputs with linked labels -->
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" required><br><br>
+
+            <label for="matric">Matric Number:</label><br>
+            <input type="text" id="matric" name="matric" required><br><br>
+
+            <label for="email">E-mail Address:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <!-- Grouped Radio Buttons for Year of Study -->
+            <label>Year of Study:</label><br>
+            <input type="radio" id="year1" name="year_of_study" value="1" required>
+            <label for="year1">Year 1</label>
+            <input type="radio" id="year2" name="year_of_study" value="2">
+            <label for="year2">Year 2</label>
+            <input type="radio" id="year3" name="year_of_study" value="3">
+            <label for="year3">Year 3</label>
+            <input type="radio" id="year4" name="year_of_study" value="4">
+            <label for="year4">Year 4</label><br><br>
+
+            <!-- Checkboxes for Workshop Sessions -->
+            <label>Select Sessions to Attend:</label><br>
+            <input type="checkbox" id="session_keynote" name="sessions" value="keynote">
+            <label for="session_keynote">Keynote Address</label><br>
+            <input type="checkbox" id="session_lab" name="sessions" value="semantic_lab">
+            <label for="session_lab">Hands-On Semantic HTML Lab</label><br>
+            <input type="checkbox" id="session_hackathon" name="sessions" value="hackathon">
+            <label for="session_hackathon">Mini-Hackathon Challenge</label><br><br>
+
+            <!-- Drop-down selection for Programme -->
+            <label for="programme">Programme:</label><br>
+            <select id="programme" name="programme" required>
+                <option value="">-- Select Your Programme --</option>
+                <option value="cs_se">Bachelor of Computer Science (Software Engineering)</option>
+                <option value="cs_net">Bachelor of Computer Science (Network Security)</option>
+                <option value="it">Bachelor of Information Technology</option>
+                <option value="math">Bachelor of Science (Financial Mathematics)</option>
+            </select><br><br>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Register Now">
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- Semantic Footer -->
+    <footer>
+        <p>Organised by Faculty of Computer Science and Mathematics, UMT</p>
+        <p>&copy; 2026 Universiti Malaysia Terengganu. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
