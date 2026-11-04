@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 Output Element</title>
+</head>
+<body>
+  <form oninput="z.value = parseInt(x.value) + parseInt(y.value)">
+    <label for="x">Slider value (0-10):</label><br>
+    <input id="x" type="range" min="0" max="10" step="1" value="0">
+    <br><br>
+    +
+    <br><br>
+    <label for="y">Numeric input:</label><br>
+    <input id="y" type="number" value="10">
+    <br><br>
+    = 
+    <strong><output name="z" for="x y">10</output></strong>
+  </form>
+</body>
+</html>

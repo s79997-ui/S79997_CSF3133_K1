@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lab Exercise 3 - Contact & Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      line-height: 1.6;
+      background-color: #fdfdfd;
+    }
+    #header, #content, #footer {
+      border: 1px solid #dcdcdc;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      background-color: #ffffff;
+    }
+    #calculator-box {
+      margin-top: 25px;
+      padding: 15px;
+      background-color: #f8f9fa;
+      border: 1px dashed #6c757d;
+      border-radius: 6px;
+    }
+    .slogan {
+      color: #666;
+      font-style: italic;
+      font-size: 0.95rem;
+    }
+    input[type="submit"] {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. Header Section -->
+  <div id="header">
+    <h1>Student Support &amp; Contact Desk</h1>
+    <span class="slogan">Prompt assistance and online fee estimations.</span>
+  </div>
+
+  <!-- 2. Content Section -->
+  <div id="content">
+    <h2>Contact Us</h2>
+    <form action="#" method="get">
+      <!-- HTML5 Email Input -->
+      <label for="contact-email">Email Address:</label><br>
+      <input type="email" id="contact-email" name="email" placeholder="example@domain.com" required><br><br>
+
+      <!-- HTML5 Date Input -->
+      <label for="pref-date">Preferred Contact Date:</label><br>
+      <input type="date" id="pref-date" name="preferred_date" required><br><br>
+
+      <!-- HTML5 Range Slider -->
+      <label for="satisfaction">Satisfaction / Priority Level (1 - 10):</label><br>
+      <input type="range" id="satisfaction" name="satisfaction_rating" min="1" max="10" value="5" step="1">
+      <br><br>
+
+      <!-- Submit Button -->
+      <input type="submit" value="Submit Form">
+    </form>
+
+    <!-- Inline Calculator Div using <output> -->
+    <div id="calculator-box">
+      <h3>Quick Fee Calculator</h3>
+      <form oninput="total.value = (parseInt(num1.value) || 0) + (parseInt(num2.value) || 0)">
+        <label for="num1">Base Consultation Fee ($):</label>
+        <input type="number" id="num1" name="num1" value="0">
+        
+        <span> + </span>
+        
+        <label for="num2">Additional Service Fee ($):</label>
+        <input type="number" id="num2" name="num2" value="0">
+        
+        <span> = Total: $</span>
+        <strong><output name="total" for="num1 num2">0</output></strong>
+      </form>
+    </div>
+  </div>
+
+  <!-- 3. Footer Section -->
+  <div id="footer">
+    <p>Contact: support@portal.edu.my &bull; Phone: +60 9-668 4100</p>
+    <p>Hakcipta Terpelihara &copy; 2026 Interactive Web Development. All rights reserved.</p>
+  </div>
+
+</body>
+</html>
