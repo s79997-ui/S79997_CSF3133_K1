@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Module 4 - Responsive Webpage</title>
+    
+    <!-- External CSS Link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS for Text Decoration & Specific Highlights -->
+    <style>
+        h1 {
+            text-decoration: overline underline;
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            text-decoration: underline;
+            color: #1e3a5f;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            text-decoration: overline;
+            color: #2c5282;
+            margin-top: 15px;
+        }
+
+        .deprecated-note {
+            text-decoration: line-through;
+            color: #888;
+        }
+
+        .content-link:link {
+            color: #2c5282;
+            text-decoration: underline;
+        }
+
+        .content-link:visited {
+            color: #6b46c1;
+        }
+
+        .content-link:hover {
+            color: #e53e3e;
+            text-decoration: overline underline;
+        }
+
+        .content-link:active {
+            color: #38a169;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Web Design &amp; Development Portal</h1>
+        <p>Integrating Semantic HTML5 with Internal &amp; External CSS</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#registration">Registration</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Section 1: Semantic Article -->
+        <section id="about">
+            <h2>About Semantic Web Design</h2>
+            <article>
+                <h3>Why Structure Matters</h3>
+                <p>
+                    Modern web pages use semantic HTML5 elements to clearly define content meaning for browsers and developers. 
+                    <span class="deprecated-note">Using old table-based layouts is no longer recommended.</span>
+                </p>
+                <p>
+                    Learn more about web standards at the 
+                    <a href="https://developer.mozilla.org/" target="_blank" class="content-link">MDN Web Docs</a>.
+                </p>
+            </article>
+        </section>
+
+        <!-- Section 2: Embedded Media -->
+        <section id="media">
+            <h2>Featured Video Showcase</h2>
+            <p>Below is an embedded HTML5 video player styled to adapt cleanly to different screen sizes.</p>
+            <figure>
+                <video width="640" height="360" controls>
+                    <source src="sample.mp4" type="video/mp4">
+                    Your browser does not support the HTML5 video tag.
+                </video>
+                <figcaption>Figure 1: Sample HTML5 Video Demonstration with Responsive Styling.</figcaption>
+            </figure>
+        </section>
+
+        <!-- Section 3: Interactive Form -->
+        <section id="registration">
+            <h2>Student Activity Registration</h2>
+            <p>Complete the form below to register your interests:</p>
+            
+            <form action="#" method="post">
+                <!-- Name Input -->
+                <div class="form-group">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+                </div>
+
+                <!-- Email Input -->
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+                </div>
+
+                <!-- Gender Radio Buttons -->
+                <div class="form-group">
+                    <label>Gender:</label>
+                    <div class="inline-options">
+                        <label><input type="radio" name="gender" value="male" required> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                    </div>
+                </div>
+
+                <!-- Favorite Hobbies Checkboxes -->
+                <div class="form-group">
+                    <label>Favorite Hobbies:</label>
+                    <div class="inline-options">
+                        <label><input type="checkbox" name="hobbies" value="coding"> Coding</label>
+                        <label><input type="checkbox" name="hobbies" value="reading"> Reading</label>
+                        <label><input type="checkbox" name="hobbies" value="sports"> Sports</label>
+                        <label><input type="checkbox" name="hobbies" value="music"> Music</label>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit">Submit Registration</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+        <p>&copy; 2026 Web Programming Lab 4. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
