@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive JavaScript Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+        <!-- Header introducing the quiz -->
+        <header>
+            <h1>Web Development Quiz</h1>
+            <p>Test your knowledge of HTML, CSS, and JavaScript!</p>
+        </header>
+
+        <main>
+            <!-- Start Screen Section -->
+            <section id="start-section">
+                <p>You have <strong>15 seconds</strong> per question. Questions are randomized each attempt.</p>
+                <button id="start-btn" class="btn primary-btn">Start Quiz</button>
+            </section>
+
+            <!-- Question, Options, and Timer Section -->
+            <section id="quiz-section" class="hidden">
+                <div class="quiz-header">
+                    <span id="question-counter">Question 1 of 5</span>
+                    <span id="timer-display">Time Left: <strong id="time-left">15</strong>s</span>
+                </div>
+
+                <h2 id="question-text">Question text goes here</h2>
+
+                <!-- Answer Options -->
+                <div id="options-container" class="options-grid">
+                    <!-- Buttons will be dynamically inserted here by JavaScript -->
+                </div>
+
+                <!-- Feedback Section -->
+                <section id="feedback-section" class="hidden">
+                    <p id="feedback-text"></p>
+                </section>
+
+                <!-- Navigation / Submit Controls -->
+                <div class="controls">
+                    <button id="submit-btn" class="btn primary-btn" disabled>Submit Answer</button>
+                    <button id="next-btn" class="btn secondary-btn hidden">Next Question</button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer to display the user's score -->
+        <footer id="score-footer">
+            <p id="score-display">Current Score: 0</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
