@@ -1,0 +1,147 @@
+/* Base page layout and typography */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f6f8;
+    color: #222;
+    padding: 20px;
+}
+
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+/* Header banner styling */
+header {
+    background-color: #164b6e;
+    color: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
+
+header p {
+    margin-top: 6px;
+    font-size: 0.95rem;
+}
+
+/* Section cards */
+.card {
+    background-color: #fff;
+    padding: 18px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+/* Button styling and hover state */
+button {
+    background-color: #1d70b8;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+button:hover {
+    background-color: #124b7d;
+}
+
+input[type="text"] {
+    padding: 9px 12px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    margin: 0 8px;
+}
+
+#welcomeMsg,
+#summaryText {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Arena and fixed-size choice images */
+.choices {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.arena {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+}
+
+.fighter img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.vs {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Result text and scoreboard */
+#result {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: grey;
+    margin-bottom: 10px;
+}
+
+.scoreboard {
+    display: flex;
+    gap: 20px;
+    font-weight: bold;
+}
+
+/* History table styling */
+#history {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+    margin-bottom: 14px;
+}
+
+#history th,
+#history td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+#history th {
+    background-color: #164b6e;
+    color: #fff;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    color: #555;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
